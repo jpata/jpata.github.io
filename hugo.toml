@@ -21,7 +21,7 @@ pygmentsCodefencesGuessSyntax = true
 [Params]
   subtitle = "Senior Research Scientist | Applied Machine Learning"
   mainSections = ["post","posts"]
-  logo = "img/avatar-icon.png" # Expecting square dimensions
+  logo = "img/avatar-icon.jpeg" # Expecting square dimensions
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
