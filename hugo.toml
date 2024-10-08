@@ -1,10 +1,7 @@
 baseurl = "https://jpata.github.io"
 DefaultContentLanguage = "en"
 title = "Joosep Pata"
-# Using theme as git submodule 
 theme = "beautifulhugo"
-# Or when using theme as hugo module
-# theme = "github.com/halogenica/beautifulhugo"
 pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
@@ -24,7 +21,7 @@ pygmentsCodefencesGuessSyntax = true
   logo = "img/avatar-icon.png" # Expecting square dimensions
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
-  commit = false
+  commit = true
   rss = false
   comments = false
   readingTime = false
@@ -52,7 +49,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params.author]
   name = "Joosep Pata"
-  website = "jpata.github.io"
+  website = "https://jpata.github.io"
   email = "joosep.pata@gmail.com"
   github = "jpata"
   linkedin = "joosep-pata"
