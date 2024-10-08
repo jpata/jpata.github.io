@@ -12,7 +12,7 @@ comments: false
 #### Tau lepton identification and reconstruction: A new frontier for jet-tagging ML algorithms
 - Computer Physics Communications 298 (2024)
 - https://doi.org/10.1016/j.cpc.2024.109095
-- We demonstrate that the transformer-based architecture can be used for tau lepton identification, and that it outperforms alternative approaches based.
+- We demonstrate that the transformer-based architecture can be used for tau lepton identification, and that it outperforms alternative approaches based on heuristic algorithms and convolutional nets.
 
 #### A Bayesian estimation of the Milky Way’s circular velocity curve using Gaia DR3
 - Astronomy and Astrophysics, Volume 676, (2023)
@@ -42,4 +42,4 @@ comments: false
 #### Identification of heavy-flavour jets with the CMS detector in pp collisions at 13 TeV
 - JINST (2018)
 - https://doi.org/10.1088/1748-0221/13/05/P05011
-- I developed a novel b-quark identification model (cMVAv2) based on xgboost, thus introducing industry-standard tools to the team.
+- I developed a novel b-quark identification model (cMVAv2) based on xgboost, thus introducing industry-standard tools to the CMS b-tagging team.
