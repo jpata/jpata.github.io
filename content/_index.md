@@ -8,4 +8,4 @@ Previously, I was a postdoctoral researcher at Caltech in the group of [Professo
 
 I've also worked with a few companies: [GScan](https://www.gscan.eu/technology), [Lingvist](https://lingvist.io/blog/is-there-a-map-for-learning-a-language/).
 
-Have an idea? [Contact me](https://www.linkedin.com/in/joosep-pata/)!
+Interested in working together? [Contact me](https://www.linkedin.com/in/joosep-pata/)!
