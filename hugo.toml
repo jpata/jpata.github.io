@@ -1,67 +1,49 @@
-baseurl = "https://jpata.github.io"
-DefaultContentLanguage = "en"
+baseURL = "https://jpata.github.io"
 title = "Joosep Pata"
-theme = "beautifulhugo"
-pygmentsStyle = "trac"
-pygmentsUseClasses = true
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
-#pygmentsUseClassic = true
-#pygmentOptions = "linenos=inline"
+theme = "gokarna"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableEmoji = true
+enableRobotsTXT = true
 
-[Services]
-  [Services.Disqus]
-    # Shortname = "XXX"
-  [Services.googleAnalytics]
-    # id = "XXX"
+# Choose one of emacs, trac or perldoc
+pygmentsStyle = "monokai"
 
-[Params]
-  subtitle = "Senior Research Scientist | Applied Machine Learning"
-  mainSections = ["post","posts"]
-  logo = "img/avatar-icon.png" # Expecting square dimensions
-  favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
-  commit = true
-  rss = false
-  comments = false
-  readingTime = false
-  wordCount = false
-  useHLJS = true
-  socialShare = false
-  delayDisqus = true
-  showRelatedPosts = false
-#  cusdisID = "XXX" # Get your App id from cusdis.com
-  hideAuthor = true
-#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
-#  disclaimerText = "The opinions expressed herein are personal and should not be interpreted otherwise."
+[params]
+  footer = "Joosep Pata"
+  description = "Senior Research Scientist in Applied Machine Learning"
+  avatarURL = "/img/avatar-icon.png"
+  AvatarAltText = "avatar"
+  avatarSize = "size-l"
+  ShowBackToTopButton = true # true or false for "back to top" button on posts and pages
+  socialIcons = [
+    {name = "github", url = "https://github.com/jpata"},
+    {name = "linkedin", url = "https://linkedin.com/in/joosep-pata"},
+    {name = "email", url = "mailto:joosep.pata@gmail.com"}
+  ]
+  accentColor = "#FF4D4D"
 
-#[[Params.bigimg]]
-#  src = "img/triangle.jpg"
-#  desc = "Triangle"
-#[[Params.bigimg]]
-#  src = "img/sphere.jpg"
-#  desc = "Sphere"
-#  # position: see values of CSS background-position.
-#  position = "center top"
-#[[Params.bigimg]]
-#  src = "img/hexagon.jpg"
-#  desc = "Hexagon"
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
 
-[Params.author]
-  name = "Joosep Pata"
-  website = "https://jpata.github.io"
-  email = "joosep.pata@gmail.com"
-  github = "jpata"
-  linkedin = "joosep-pata"
-
-
-[[menu.main]]
+  [[menu.main]]
     name = "Research"
-    url = "page/research/"
-    weight = 3 
+    pre = "<span data-feather='code'></span>"
+    url = "/page/research/"
+    weight = 2
 
+  [[menu.main]]
+    name = "Posts"
+    pre = "<span data-feather='book'></span>"
+    url = "/post/"
+    weight = 3
 
-[[menu.main]]
-    name = "Talks"
-    url = "page/talks/"
-    weight = 3 
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false

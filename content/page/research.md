@@ -1,7 +1,6 @@
 ---
-title: Research
-subtitle: Peer-reviewed papers
-comments: false
+title: Peer-reviewed research
+type: page
 ---
 
 #### Improved particle-flow event reconstruction with scalable neural networks for current and future particle detectors

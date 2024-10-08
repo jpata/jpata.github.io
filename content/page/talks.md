@@ -1,7 +1,7 @@
 ---
 title: Talks
 subtitle: Conference and outreach talks
-comments: false
+type: page
 ---
 
 #### CERN Baltic Conference
