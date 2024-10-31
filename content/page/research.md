@@ -3,6 +3,11 @@ title: Peer-reviewed research
 type: page
 ---
 
+#### A unified machine learning approach for reconstructing hadronically decaying tau leptons
+- Computer Physics Communications 307 (2025)
+- https://doi.org/10.1016/j.cpc.2024.109399
+- We show that tau leptons can be efficiently and accurately reconstructed using a multi-task machine learning setup.
+
 #### Improved particle-flow event reconstruction with scalable neural networks for current and future particle detectors
 - Nature Communications Physics 7, 124 (2024) 
 - https://doi.org/10.1038/s42005-024-01599-5
