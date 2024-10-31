@@ -5,7 +5,8 @@ type: page
 ---
 
 #### CERN Baltic Conference
-- Tallinn, October 18, 2024
+- Tallinn, October 16, 2024
+- https://indico.cern.ch/event/1416853/contributions/6178185/attachments/2948367/5183026/cern_baltic_conference_2024.pdf
 - Machine learning and computing
 
 #### Viimsi High School
