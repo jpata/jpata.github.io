@@ -3,6 +3,10 @@ title: Peer-reviewed research
 type: page
 ---
 
+#### On the detection of stellar wakes in the Milky Way: a deep learning approach
+- https://doi.org/10.48550/arXiv.2412.02749
+- We develop N-body simulations and deep learning methods to detect gravitational wakes from dark substructures
+
 #### A unified machine learning approach for reconstructing hadronically decaying tau leptons
 - Computer Physics Communications 307 (2025)
 - https://doi.org/10.1016/j.cpc.2024.109399
