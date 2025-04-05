@@ -3,9 +3,34 @@ title: Peer-reviewed research
 type: page
 ---
 
+
+#### Reconstructing hadronically decaying tau leptons with a jet foundation model
+- This paper investigates adapting the OmniJet-a jet foundation model, originally pretrained on a different dataset and task, to reconstruct hadronically decaying tau leptons, demonstrating that fine-tuning the pretrained model significantly improves performance, particularly momentum resolution, compared to training from scratch.
+- Submitted to SciPost Physics
+- https://doi.org/10.48550/arXiv.2503.19165
+{{< side-by-side 
+    width="100%" 
+    img1="/img/2025/taufm/architecture.jpg" 
+    img2="/img/2025/taufm/ptreco.jpg"
+    alt1="A figure with two diagrams illustrating workflows for jet foundation models. The left diagram shows the typical workflow: a large jet dataset trains a foundation model, which produces a jet embedding used by a task-specific head for jet tagging. The right diagram shows the paper's approach: the same foundation model is adapted using a smaller hadronic tau dataset for new tasks (tau tagging, kinematic reconstruction, decay mode), with options to fine-tune the model (screwdriver icon) or train task-specific heads from scratch (fire icon)." 
+    alt2="A histogram comparing the performance of kinematic reconstruction for hadronically decaying tau leptons using two training methods: fine-tuning a pre-existing model (green distribution) and training a model from scratch (red distribution). The x-axis represents the relative difference between predicted and true transverse momentum (pT_pred - pT_true) / pT_true, and the y-axis shows the normalized bin content. The fine-tuned model's distribution is narrower and centered closer to zero, indicating better performance."
+    caption1="We contrast the typical training workflow for jet foundation models with the generalized approach used in this study to adapt an existing model to new datasets and tasks, specifically for hadronic tau lepton reconstruction." 
+    caption2="Fine-tuning improves the pT reconstruction resolution by approximately 50% compared to training from scratch on small datasets." 
+>}}
+
 #### On the detection of stellar wakes in the Milky Way: a deep learning approach
-- https://doi.org/10.48550/arXiv.2412.02749
-- We develop N-body simulations and deep learning methods to detect gravitational wakes from dark substructures
+- This paper assesses the viability of using deep learning trained on simulations to detect stellar wakes induced by dark matter subhalos in the Milky Way's stellar halo, finding the method can infer subhalo presence down to masses of 5x10⁷ M☉.
+- Astronomy and Astrophysics 693, A227 (2025)
+- https://doi.org/10.1051/0004-6361/202451480
+{{< side-by-side 
+    width="100%" 
+    img1="/img/2025/stellarwakes/wake.jpg" 
+    img2="/img/2025/stellarwakes/roc.jpg"
+    alt1="The simulated stellar wake overdensity from a dark matter halo." 
+    alt2="The receiver operating characteristic curve of the ML model, as a function of the subhalo mass."
+    caption1="The dark matter subhalo creates an overdensity, as well as perturbations in velocities." 
+    caption2="The ML model can detect massive subhalos by combining the overdensity and velocity features." 
+>}}
 
 #### A unified machine learning approach for reconstructing hadronically decaying tau leptons
 - Computer Physics Communications 307 (2025)
