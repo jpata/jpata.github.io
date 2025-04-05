@@ -26,10 +26,10 @@ type: page
     width="100%" 
     img1="/img/2025/stellarwakes/wake.jpg" 
     img2="/img/2025/stellarwakes/roc.jpg"
-    alt1="The simulated stellar wake overdensity from a dark matter halo." 
-    alt2="The receiver operating characteristic curve of the ML model, as a function of the subhalo mass."
-    caption1="The dark matter subhalo creates an overdensity, as well as perturbations in velocities." 
-    caption2="The ML model can detect massive subhalos by combining the overdensity and velocity features." 
+    alt1="X-Y plot showing stellar overdensity (color scale) caused by a simulated subhalo (black circle at center). An overdense wake region extends to the left (-X direction), with a dashed contour indicating the half-max density area." 
+    alt2="Plot comparing the performance (ROC curves) of machine learning models in detecting three different subhalo masses. The x-axis shows the true positive rate, and the y-axis shows the false positive rate. Each colored line represents a model trained with a different subhalo mass. A dashed black line indicates random chance performance."
+    caption1="Simulated stellar overdensity wake induced by a 5x10⁸ M☉ subhalo moving through the stellar halo, projected onto the X-Y plane." 
+    caption2="This chart shows how well a machine learning model can find stellar wakes of different mass. A line closer to the bottom-right corner means the model is better at finding the wakes without mistakenly identifying random patterns as wakes." 
 >}}
 
 #### A unified machine learning approach for reconstructing hadronically decaying tau leptons
