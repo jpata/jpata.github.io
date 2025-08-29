@@ -3,11 +3,24 @@ title: Peer-reviewed research
 type: page
 ---
 
+#### Fine-tuning machine-learned particle-flow reconstruction for new detector geometries in future colliders
+- This study demonstrates that a machine-learned algorithm for particle-flow reconstruction, when pre-trained on data from one particle detector, can be successfully fine-tuned for a different detector design to achieve the same performance as a model trained from scratch but with ten times less data.
+- Phys. Rev. D 111, 092015 (2025)
+- https://doi.org/10.1103/PhysRevD.111.092015
+{{< side-by-side 
+    width="100%" 
+    img1="/img/2025/mlpf_finetune/loss.png" 
+    img2="/img/2025/mlpf_finetune/results.png"
+    alt1="A graph showing the training loss as a function of the training time, comparing the previous graph neural network model (blue) to a transformer model (orange). Using flash attention further speeds up the training (red)." 
+    alt2="A graph showing the dependence of the jet resolution measure (lower values are better) as a function of the training dataset size. We compare a model trained from scratch (blue) to a model fine-tunied from an existing checkpoint on another dataset (orange)."
+    caption1="We find that using a transformer-based model improves the loss significantly compared to the previous graph neural network based model." 
+    caption2="Fine-tuning a pretrained model reduces the required dataset size by about 10x." 
+>}}
 
 #### Reconstructing hadronically decaying tau leptons with a jet foundation model
 - This paper investigates adapting the OmniJet-a jet foundation model, originally pretrained on a different dataset and task, to reconstruct hadronically decaying tau leptons, demonstrating that fine-tuning the pretrained model significantly improves performance, particularly momentum resolution, compared to training from scratch.
-- Submitted to SciPost Physics
-- https://doi.org/10.48550/arXiv.2503.19165
+- SciPost Phys. Core 8, 046 (2025)
+- https://doi.org/10.21468/SciPostPhysCore.8.3.046
 {{< side-by-side 
     width="100%" 
     img1="/img/2025/taufm/architecture.jpg" 
