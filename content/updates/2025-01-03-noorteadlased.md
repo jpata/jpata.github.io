@@ -12,4 +12,4 @@ I spoke about the use of AI as a tool for discovery in fundamental sciences, and
 
 Read more about the conference here: https://researchinestonia.eu/2025/01/15/future-estonian-talent-abroad/
 
-[![Presentation on YouTube in Estonian](/img/2025/akadeemia.jpeg)](https://www.youtube.com/watch?t=2558&v=oTWFGEsf0BE&feature=youtu.be)
+[![Presentation on YouTube in Estonian](/img/2025/akadeemia.jpg)](https://www.youtube.com/watch?t=2558&v=oTWFGEsf0BE&feature=youtu.be)
