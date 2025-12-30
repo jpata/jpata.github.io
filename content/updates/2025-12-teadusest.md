@@ -11,6 +11,6 @@ The Center of Excellence unites researchers from University of Tartu, TalTech â€
 Our team members contribute to measurements of the Higgs boson at unprecedented precision, develop novel ML-based software and algorithms for data reconstruction, develop ultrafast electronics for triggering, and much more!
 
 What did we accomplish? What lies ahead? 
-See the talk here: https://youtu.be/SyesLXJtqPc?t=19351
 
-![](/img/2025/teadusest.jpeg)
+[![Presentation on YouTube in Estonian](/img/2025/teadusest.jpeg)](https://youtu.be/SyesLXJtqPc?t=19351)
+

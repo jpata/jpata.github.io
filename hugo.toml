@@ -38,13 +38,13 @@ pygmentsStyle = "monokai"
 
   [[menu.main]]
     name = "Talks"
-    pre = "<span data-feather='code'></span>"
+    pre = "<span data-feather='archive'></span>"
     url = "/page/talks/"
     weight = 2
 
   [[menu.main]]
     name = "Updates"
-    pre = "<span data-feather='book'></span>"
+    pre = "<span data-feather='activity'></span>"
     url = "/updates/"
     weight = 3
 
