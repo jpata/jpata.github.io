@@ -4,10 +4,26 @@ subtitle: Conference and outreach talks
 type: page
 ---
 
+#### TeadusEST 2025
+- Tartu, December 4, 2025
+- https://youtu.be/SyesLXJtqPc?t=19351
+
+#### Taltech AI Retreat
+- Estonia, November 27, 2025
+- https://taltech.ee/en/events/AI-retreat
+
+#### CERN OpenLab Workshop
+- CERN, March 4, 2025
+- https://indico.cern.ch/event/1440389/#6-machine-learned-particle-flo
+
+#### Estonian Academy of Sciences
+- Tallinn, January 3, 2025
+- https://www.youtube.com/watch?v=S6IQwRzNQpM
+
 #### CERN Baltic Conference
 - Tallinn, October 16, 2024
 - https://indico.cern.ch/event/1416853/contributions/6178185/attachments/2948367/5183026/cern_baltic_conference_2024.pdf
-- Machine learning and computing
+- Talk on machine learning and computing for CERN in Estonia
 
 #### Viimsi High School
 - Viimsi, June 6, 2024
