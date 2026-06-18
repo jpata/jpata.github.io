@@ -9,6 +9,11 @@ type: page
 - https://kvant.ee/en/quantum-technology-estonia/useful-resources/startup-day-2026/
 - Panel: "Cutting Through the Hype – Quantum and AI Technology Limits, Lessons, and Next Moves"
 
+#### ZPW2026
+- Zurich, January 5-7, 2026
+- https://indico.cern.ch/event/1604420/contributions/6760819/
+- Particle flow reconstruction with a learnable, differentiable, efficient ML model
+
 #### TeadusEST 2025
 - Tartu, December 4, 2025
 - https://youtu.be/SyesLXJtqPc?t=19351
