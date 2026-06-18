@@ -68,6 +68,11 @@ type: page
 - https://indico.cern.ch/event/855454/contributions/4597457/
 - Machine learning for particle flow reconstruction at CMS, on behalf of CMS
 
+#### QU Data Science Basics 2021
+- Hamburg (virtual), 2021
+- https://indico.desy.de/category/834/
+- Graph neural networks, invited
+
 #### Lake Louise 2019
 - Lake Louise, February 15, 2019
 - https://indico.cern.ch/event/760557/contributions/3295177/

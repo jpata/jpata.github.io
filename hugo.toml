@@ -43,10 +43,16 @@ pygmentsStyle = "monokai"
     weight = 2
 
   [[menu.main]]
+    name = "Resume"
+    pre = "<span data-feather='file-text'></span>"
+    url = "/page/resume/"
+    weight = 3
+
+  [[menu.main]]
     name = "Updates"
     pre = "<span data-feather='activity'></span>"
     url = "/updates/"
-    weight = 3
+    weight = 4
 
 [markup]
   [markup.tableOfContents]

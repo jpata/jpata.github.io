@@ -1,11 +1,7 @@
-Hi!
+I am a **Senior Research Scientist** at the [Laboratory of High-Energy and Computational Physics](https://kbfi.ee/keaf/) at [NICPB](https://www.kbfi.ee), a national lab for fundamental and applied research in Estonia. My work focuses on the intersection of **applied machine learning**, **high-performance computing (HPC)**, and **experimental particle physics**.
 
-I work on applied machine learning, high-performance computing and particle physics.
+With over **14 years of experience** in scientific computing and deep learning, my research centers on developing **scalable machine learning models** (such as graph neural networks and transformers) for **real-time data reconstruction** at the CERN LHC and future colliders. I previously **co-led the reconstruction software group for the CERN CMS collaboration** and currently **direct research initiatives** supported by the [Estonian Research Council](https://etag.ee/en/).
 
-I'm currently a Senior Research Scientist at the [Laboratory of High-Energy and Computational Physics](https://kbfi.ee/high-energy-and-computational-physics/?lang=en) at [NICPB](https://www.kbfi.ee), a national lab for fundamental and applied research in Estonia. My work has been funded by the [Estonian Research Council](https://etag.ee/en/). 
+Before joining NICPB, I conducted **postdoctoral research at Caltech** and completed my **PhD at ETH Zürich** ([Thesis](https://doi.org/10.3929/ethz-b-000276848)). In addition to academic research, I collaborate with industry partners to design and deploy **custom machine learning solutions**. This includes developing real-time multi-task segmentation and object identification networks for Jetson Orin NX DLA at [Taara Robotics](https://taararobotics.com/), voxel-based CNNs for 3D tomography at [GScan](https://www.gscan.eu/technology), and sequence modeling at [Lingvist](https://lingvist.io/blog/is-there-a-map-for-learning-a-language/). I also serve as a **scientific advisor** at [Mu-Ray Tech](https://www.linkedin.com/company/mu-ray-tech).
 
-I was a postdoctoral researcher at Caltech in the group of [Professor Spiropulu](https://pma.caltech.edu/people/maria-spiropulu), and prior to that, a PhD student at ETH Zurich in the group of [Professor Dissertori](https://dissertori-group.ethz.ch/). I did my undergraduate studies in physics at the [University of Tartu](https://ut.ee/en). 
-
-I've also worked with a few companies, developing custom ML solutions: [GScan](https://www.gscan.eu/technology) (improving 3D reconstruction with voxel-based CNNs), [Lingvist](https://lingvist.io/blog/is-there-a-map-for-learning-a-language/) (improving recall modelling with early language models).
-
-Interested in working together? [Contact me](https://www.linkedin.com/in/joosep-pata/)!
+For details on my background, publications, and talks, please view my [resume](/page/resume/) or [get in touch](https://www.linkedin.com/in/joosep-pata/) to discuss potential collaborations.
