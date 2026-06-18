@@ -63,8 +63,8 @@ High-Energy Physics and Computation Group 	Tallinn, Estonia
 
 ## **Industry projects**
 
+* [**Mu-Ray Tech**](https://www.linkedin.com/company/mu-ray-tech): advisor	**2025 – Present**  
 * [**Taara Robotics**](https://taararobotics.com/): real-time multi-task segmentation and object identification networks for Jetson Orin NX DLA	**2025**  
-* [**Mu-Ray Tech**](https://www.linkedin.com/company/mu-ray-tech): scientific advisor	**2025 – Present**  
 * [**GScan**](https://www.gscan.eu/): accurate tomography reconstruction using 3D-CNNs for construction safety	**2023**
 
 ## **Language skills**
