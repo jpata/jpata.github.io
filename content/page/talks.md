@@ -4,6 +4,11 @@ subtitle: Conference and outreach talks
 type: page
 ---
 
+#### sTARTUp Day 2026
+- Tartu, January 29, 2026
+- https://kvant.ee/en/quantum-technology-estonia/useful-resources/startup-day-2026/
+- Panel: "Cutting Through the Hype – Quantum and AI Technology Limits, Lessons, and Next Moves"
+
 #### TeadusEST 2025
 - Tartu, December 4, 2025
 - https://youtu.be/SyesLXJtqPc?t=19351
