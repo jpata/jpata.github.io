@@ -1,8 +1,3 @@
-
-
-| Tallinn, Estonia | Joosep Pata, PhD | [https://jpata.github.io](https://jpata.github.io)   |
-| :---- | :---: | ----: |
-
 **Senior** **Research Scientist** with **14+ years of experience** developing and deploying software solutions for complex, novel, data-intensive problems in the HEP domain. Seeking to leverage my expertise in **scientific computing, applied deep learning** and **HPC** for challenging and impactful research directions. Proven ability to **prioritize and execute**, **lead projects**, **iterate fast**, **deliver results** and **share knowledge** in diverse teams.
 
 ## **Professional Experience**
