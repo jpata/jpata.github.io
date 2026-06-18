@@ -6,52 +6,256 @@
 {{ $alt2 := .Get "alt2" | default "" }}
 {{ $caption1 := .Get "caption1" | default "" }}
 {{ $caption2 := .Get "caption2" | default "" }}
-{{ $gap := .Get "gap" | default "0.25rem" }}
+{{ $gap := .Get "gap" | default "1.5rem" }}
 
 <style>
-  .side-by-side-figure {
+  .side-by-side-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: {{ $gap }};
+    width: 100%;
+    margin: 2rem 0;
+  }
+  
+  .side-by-side-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-card {
     position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #1e293b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
   }
   
-  .combined-caption {
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background-color: rgba(245, 245, 245, 0.9);
-    padding: 0.5rem;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    opacity: 0;
-    transition: opacity 0.3s ease, bottom 0.3s ease;
+  .image-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    border-color: rgba(255, 77, 77, 0.3);
+  }
+  
+  .card-img {
+    width: 100%;
     height: auto;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
   
-  .side-by-side-figure:hover .combined-caption {
+  .image-card:hover .card-img {
+    transform: scale(1.02);
+  }
+  
+  .info-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #f8fafc;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.96);
+    transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
+    z-index: 5;
+    box-sizing: border-box;
+  }
+  
+  .image-card:hover .info-overlay,
+  .image-card.is-active .info-overlay {
     opacity: 1;
-    bottom: -45px;
+    visibility: visible;
+    transform: scale(1);
   }
   
-  .side-by-side-container {
-    margin-bottom: 50px;
+  .info-overlay-header {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-color, #FF4D4D);
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-overlay-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .info-overlay-text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #e2e8f0;
+    margin: 0;
+    max-height: 85%;
+    overflow-y: auto;
+    padding: 0 0.25rem;
+  }
+  
+  .info-overlay-text::-webkit-scrollbar {
+    width: 4px;
+  }
+  .info-overlay-text::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .info-overlay-text::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+  }
+  
+  .info-badge-trigger {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    color: #f8fafc;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 3;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .image-card:hover .info-badge-trigger {
+    background: var(--accent-color, #FF4D4D);
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .image-card:hover .info-badge-trigger,
+  .image-card.is-active .info-badge-trigger {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+  }
+  
+  .side-by-side-caption {
+    margin-top: 0.85rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-align: center;
+    font-style: italic;
+    color: inherit;
+    opacity: 0.75;
+    padding: 0 0.5rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.15);
+    padding-top: 0.5rem;
+    width: 90%;
   }
 </style>
 
-<figure class="side-by-side-figure" style="width: {{ $width }}; margin: 0 auto;">
-  <div class="side-by-side-container" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: {{ $gap }};">
-    <div class="side-by-side-image" style="flex: 1; min-width: 250px;">
-      <img src="{{ $img1 }}" alt="{{ $alt1 }}" style="width: 100%; height: auto; display: block;">
-    </div>
-    <div class="side-by-side-image" style="flex: 1; min-width: 250px;">
-      <img src="{{ $img2 }}" alt="{{ $alt2 }}" style="width: 100%; height: auto; display: block;">
-    </div>
-  </div>
+<div class="side-by-side-grid" style="max-width: {{ $width }}; margin-left: auto; margin-right: auto;">
   
-  {{ if or $caption1 $caption2 }}
-  <div class="combined-caption">
-    {{ if $caption1 }}(Left) {{ $caption1 | markdownify }}{{ end }}
-    {{ if $caption2 }}(Right) {{ $caption2 | markdownify }}{{ end }}
+  <!-- Left Image Column -->
+  <div class="side-by-side-column">
+    <div class="image-card" tabindex="0">
+      <img class="card-img" src="{{ $img1 }}" alt="{{ $alt1 }}">
+      
+      {{ if $alt1 }}
+      <div class="info-overlay">
+        <div class="info-overlay-header">
+          <span class="info-overlay-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </span>
+          <span>Details</span>
+        </div>
+        <p class="info-overlay-text">{{ $alt1 }}</p>
+      </div>
+      
+      <div class="info-badge-trigger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+      </div>
+      {{ end }}
+    </div>
+    {{ if $caption1 }}
+    <div class="side-by-side-caption">
+      {{ $caption1 | markdownify }}
+    </div>
+    {{ end }}
   </div>
-  {{ end }}
-</figure>
+
+  <!-- Right Image Column -->
+  <div class="side-by-side-column">
+    <div class="image-card" tabindex="0">
+      <img class="card-img" src="{{ $img2 }}" alt="{{ $alt2 }}">
+      
+      {{ if $alt2 }}
+      <div class="info-overlay">
+        <div class="info-overlay-header">
+          <span class="info-overlay-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </span>
+          <span>Details</span>
+        </div>
+        <p class="info-overlay-text">{{ $alt2 }}</p>
+      </div>
+      
+      <div class="info-badge-trigger">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+      </div>
+      {{ end }}
+    </div>
+    {{ if $caption2 }}
+    <div class="side-by-side-caption">
+      {{ $caption2 | markdownify }}
+    </div>
+    {{ end }}
+  </div>
+
+</div>
+
+{{ if not (.Page.Scratch.Get "sideBySideScriptLoaded") }}
+  {{ .Page.Scratch.Set "sideBySideScriptLoaded" true }}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Toggle card active overlay when clicked/tapped (especially for mobile)
+      document.body.addEventListener('click', function(e) {
+        const card = e.target.closest('.image-card');
+        if (card) {
+          card.classList.toggle('is-active');
+          document.querySelectorAll('.image-card').forEach(other => {
+            if (other !== card) other.classList.remove('is-active');
+          });
+          e.stopPropagation();
+        } else {
+          document.querySelectorAll('.image-card').forEach(other => {
+            other.classList.remove('is-active');
+          });
+        }
+      });
+      
+      // Accessibility: support space/enter keys on focused cards
+      document.querySelectorAll('.image-card').forEach(card => {
+        card.addEventListener('keydown', function(e) {
+          if (e.key === ' ' || e.key === 'Enter') {
+            e.preventDefault();
+            this.classList.toggle('is-active');
+          }
+        });
+      });
+    });
+  </script>
+{{ end }}
