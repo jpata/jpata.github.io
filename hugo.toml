@@ -40,12 +40,6 @@ pygmentsStyle = "monokai"
     name = "Talks"
     pre = "<span data-feather='archive'></span>"
     url = "/page/talks/"
-    weight = 2
-
-  [[menu.main]]
-    name = "Resume"
-    pre = "<span data-feather='file-text'></span>"
-    url = "/page/resume/"
     weight = 3
 
   [[menu.main]]
