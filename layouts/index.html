@@ -1,173 +1,120 @@
 {{ define "main" }}
-<div class="landing-page">
-  <section class="landing-hero" aria-labelledby="hero-title">
-    <div class="hero-copy">
-      <p class="eyebrow">Senior Research Scientist · NICPB</p>
-      <h1 id="hero-title">Machine learning for scientific discovery and real-time reconstruction.</h1>
-      <p class="hero-intro">
+<div class="landing-page landing-minimal">
+  <section class="minimal-hero" aria-labelledby="hero-title">
+    <div class="minimal-hero-copy">
+      <p class="minimal-kicker">Senior Research Scientist · NICPB</p>
+      <h1 id="hero-title">Machine learning for scientific discovery.</h1>
+      <p class="minimal-intro">
         I develop scalable machine-learning systems for complex scientific data—from particle-level reconstruction at CERN to foundation models, astrophysics, and scientific instruments.
       </p>
-      <p class="hero-affiliation">
+      <p class="minimal-affiliation">
         Laboratory of High-Energy and Computational Physics at <a href="https://www.kbfi.ee">NICPB</a>, Estonia
       </p>
-      <div class="hero-actions" aria-label="Primary actions">
-        <a class="button button-primary" href="/page/research/">Explore research</a>
-        <a class="button button-secondary" href="/page/resume/">View CV</a>
-        <a class="text-link" href="mailto:joosep.pata@gmail.com">Discuss a collaboration <span aria-hidden="true">→</span></a>
+      <div class="minimal-actions" aria-label="Primary actions">
+        <a class="minimal-primary-action" href="/page/research/">Explore research</a>
+        <a href="/page/resume/">CV <span aria-hidden="true">↗</span></a>
+        <a href="mailto:joosep.pata@gmail.com">Email <span aria-hidden="true">↗</span></a>
       </div>
-      <div class="profile-links" aria-label="Research and professional profiles">
+      <nav class="minimal-profiles" aria-label="Research and professional profiles">
         <a href="https://orcid.org/0000-0002-5191-5759">ORCID</a>
         <a href="https://inspirehep.net/authors/1077949">INSPIRE</a>
         <a href="https://github.com/jpata">GitHub</a>
         <a href="https://www.linkedin.com/in/joosep-pata/">LinkedIn</a>
-      </div>
+      </nav>
     </div>
-    <div class="hero-portrait">
-      <div class="portrait-frame">
-        <img src="{{ .Site.Params.AvatarURL }}" alt="{{ .Site.Params.AvatarAltText }}" width="1063" height="1063">
-      </div>
-      <p class="portrait-caption">Experimental particle physics · Scientific ML · HPC</p>
-    </div>
+
+    <figure class="minimal-portrait">
+      <img src="{{ .Site.Params.AvatarURL }}" alt="{{ .Site.Params.AvatarAltText }}" width="1063" height="1063">
+      <figcaption>Experimental particle physics · Scientific ML · HPC</figcaption>
+    </figure>
   </section>
 
-  <section class="credibility-strip" aria-label="Selected experience and recognition">
-    <div class="credibility-item">
-      <span class="credibility-label">Research leadership</span>
-      <strong>Co-led reconstruction software for CERN CMS</strong>
+  <dl class="minimal-credentials" aria-label="Selected experience and recognition">
+    <div>
+      <dt>Research leadership</dt>
+      <dd>Co-led CERN CMS reconstruction software</dd>
     </div>
-    <div class="credibility-item">
-      <span class="credibility-label">Recognition</span>
-      <strong>Estonian National Research Award · 2025</strong>
+    <div>
+      <dt>Recognition</dt>
+      <dd>Estonian National Research Award · 2025</dd>
     </div>
-    <div class="credibility-item">
-      <span class="credibility-label">Research training</span>
-      <strong>ETH Zürich PhD · Caltech postdoc</strong>
+    <div>
+      <dt>Training</dt>
+      <dd>ETH Zürich PhD · Caltech postdoc</dd>
     </div>
-  </section>
+  </dl>
 
-  <section class="home-section" aria-labelledby="focus-title">
-    <div class="section-heading">
+  <section class="minimal-section" aria-labelledby="selected-title">
+    <header class="minimal-section-header">
       <div>
-        <p class="eyebrow">Research focus</p>
-        <h2 id="focus-title">Learning systems for complex scientific data</h2>
+        <p class="minimal-kicker">Selected work</p>
+        <h2 id="selected-title">Recent research</h2>
       </div>
-      <p>My work connects machine-learning methodology with the constraints of real detectors, large-scale computing, and scientific inference.</p>
-    </div>
-    <div class="focus-grid">
-      <article class="focus-card">
-        <span class="card-index">01</span>
-        <h3>Event reconstruction</h3>
-        <p>Learnable particle-flow systems that turn heterogeneous detector signals into accurate, analysis-ready particle representations.</p>
-        <a href="/page/research/#full-event-interpretation-with-machine-learning-based-particle-flow-reconstruction-in-the-cms-detector">CMS particle flow <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="focus-card">
-        <span class="card-index">02</span>
-        <h3>Scientific foundation models</h3>
-        <p>Transferable representations and multi-task architectures that connect reconstruction, interpretation, and downstream analysis.</p>
-        <a href="/page/research/#machine-learned-particle-flow-as-a-foundation-model-for-collider-physics">Foundation-model research <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="focus-card">
-        <span class="card-index">03</span>
-        <h3>Applied scientific ML</h3>
-        <p>Methods for astrophysical inference, simulation, robotics, tomography, and other data-intensive experimental domains.</p>
-        <a href="/page/research/#on-the-detection-of-stellar-wakes-in-the-milky-way-a-deep-learning-approach">Astrophysics and ML <span aria-hidden="true">→</span></a>
-      </article>
-    </div>
-  </section>
+      <a class="minimal-section-link" href="/page/research/">All research <span aria-hidden="true">→</span></a>
+    </header>
 
-  <section class="home-section featured-section" aria-labelledby="featured-title">
-    <div class="section-heading compact-heading">
-      <div>
-        <p class="eyebrow">Selected work</p>
-        <h2 id="featured-title">Recent research highlights</h2>
-      </div>
-      <a class="section-link" href="/page/research/">All research <span aria-hidden="true">→</span></a>
-    </div>
-    <div class="featured-grid">
-      <article class="featured-card">
-        <a class="featured-image" href="/page/research/#full-event-interpretation-with-machine-learning-based-particle-flow-reconstruction-in-the-cms-detector" tabindex="-1" aria-hidden="true">
-          <img src="/img/2026/cms_mlpf/architecture.png" alt="" loading="lazy">
-        </a>
-        <div class="featured-content">
-          <p class="card-meta">CMS · Eur. Phys. J. C · 2026</p>
+    <div class="minimal-work-list">
+      <article class="minimal-work-row">
+        <div class="minimal-work-number" aria-hidden="true">01</div>
+        <div class="minimal-work-copy">
+          <p class="minimal-meta">CMS · Eur. Phys. J. C · 2026</p>
           <h3><a href="/page/research/#full-event-interpretation-with-machine-learning-based-particle-flow-reconstruction-in-the-cms-detector">Full-event interpretation with machine-learned particle flow</a></h3>
           <p>GPU-ready reconstruction integrated into CMS, improving jet resolution while reducing inference time.</p>
         </div>
+        <a class="minimal-row-link" href="/page/research/#full-event-interpretation-with-machine-learning-based-particle-flow-reconstruction-in-the-cms-detector" aria-label="Read about full-event interpretation">Read <span aria-hidden="true">→</span></a>
       </article>
-      <article class="featured-card">
-        <a class="featured-image" href="/page/research/#machine-learned-particle-flow-as-a-foundation-model-for-collider-physics" tabindex="-1" aria-hidden="true">
-          <img src="/img/2026/mlpf_foundation/illustration.png" alt="" loading="lazy">
-        </a>
-        <div class="featured-content">
-          <p class="card-meta">Foundation models · Preprint · 2026</p>
+
+      <article class="minimal-work-row">
+        <div class="minimal-work-number" aria-hidden="true">02</div>
+        <div class="minimal-work-copy">
+          <p class="minimal-meta">Foundation models · Preprint · 2026</p>
           <h3><a href="/page/research/#machine-learned-particle-flow-as-a-foundation-model-for-collider-physics">Particle flow as a foundation model for collider physics</a></h3>
           <p>Learned per-particle representations improve jet tagging, energy regression, and missing-momentum inference.</p>
         </div>
+        <a class="minimal-row-link" href="/page/research/#machine-learned-particle-flow-as-a-foundation-model-for-collider-physics" aria-label="Read about particle flow as a foundation model">Read <span aria-hidden="true">→</span></a>
       </article>
-      <article class="featured-card">
-        <a class="featured-image" href="/page/research/#on-the-detection-of-stellar-wakes-in-the-milky-way-a-deep-learning-approach" tabindex="-1" aria-hidden="true">
-          <img src="/img/2025/stellarwakes/wake.jpg" alt="" loading="lazy">
-        </a>
-        <div class="featured-content">
-          <p class="card-meta">Astrophysics · A&amp;A · 2025</p>
+
+      <article class="minimal-work-row">
+        <div class="minimal-work-number" aria-hidden="true">03</div>
+        <div class="minimal-work-copy">
+          <p class="minimal-meta">Astrophysics · A&amp;A · 2025</p>
           <h3><a href="/page/research/#on-the-detection-of-stellar-wakes-in-the-milky-way-a-deep-learning-approach">Detecting dark-matter subhalo wakes with deep learning</a></h3>
           <p>Simulation-trained models probe the stellar signatures of dark-matter subhalos in the Milky Way.</p>
         </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="home-section engagement-section" aria-labelledby="engagement-title">
-    <div class="section-heading compact-heading">
-      <div>
-        <p class="eyebrow">Work together</p>
-        <h2 id="engagement-title">Research, supervision, and applied collaboration</h2>
-      </div>
-    </div>
-    <div class="engagement-grid">
-      <article class="engagement-card">
-        <p class="card-meta">Mentorship</p>
-        <h3>Supervised research</h3>
-        <p>I supervise doctoral and thesis projects in particle physics, scientific machine learning, simulation, and data-intensive inference.</p>
-        <a href="/page/supervision/">Current and completed projects <span aria-hidden="true">→</span></a>
-      </article>
-      <article class="engagement-card">
-        <p class="card-meta">Cross-domain R&amp;D</p>
-        <h3>Applied machine learning</h3>
-        <p>I collaborate on scientific instruments and industry problems involving perception, tomography, sequence modelling, and deployment on constrained hardware.</p>
-        <a href="mailto:joosep.pata@gmail.com">Start a conversation <span aria-hidden="true">→</span></a>
+        <a class="minimal-row-link" href="/page/research/#on-the-detection-of-stellar-wakes-in-the-milky-way-a-deep-learning-approach" aria-label="Read about detecting dark-matter subhalo wakes">Read <span aria-hidden="true">→</span></a>
       </article>
     </div>
   </section>
 
   {{ $posts := where .Site.RegularPages "Params.type" "post" }}
   {{ if gt (len $posts) 0 }}
-  <section class="home-section news-section" aria-labelledby="news-title">
-    <div class="section-heading compact-heading">
+  <section class="minimal-section" aria-labelledby="news-title">
+    <header class="minimal-section-header">
       <div>
-        <p class="eyebrow">Latest</p>
-        <h2 id="news-title">Research news and activities</h2>
+        <p class="minimal-kicker">Latest</p>
+        <h2 id="news-title">News and activities</h2>
       </div>
-      <a class="section-link" href="/updates/">All news <span aria-hidden="true">→</span></a>
-    </div>
-    <div class="news-grid">
+      <a class="minimal-section-link" href="/updates/">All news <span aria-hidden="true">→</span></a>
+    </header>
+
+    <div class="minimal-news-list">
       {{ range first 3 $posts.ByDate.Reverse }}
-      <article class="news-card">
+      <article class="minimal-news-row">
         <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-        <p>{{ .Summary | plainify | truncate 150 }}</p>
+        <a class="minimal-row-link" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read <span aria-hidden="true">→</span></a>
       </article>
       {{ end }}
     </div>
   </section>
   {{ end }}
 
-  <section class="contact-band" aria-labelledby="contact-title">
+  <section class="minimal-contact" aria-labelledby="contact-title">
     <div>
-      <p class="eyebrow">Contact</p>
-      <h2 id="contact-title">Interested in scientific ML that has to work beyond the benchmark?</h2>
+      <p class="minimal-kicker">Contact</p>
+      <h2 id="contact-title">Scientific ML for real-world research systems.</h2>
     </div>
-    <a class="button button-light" href="mailto:joosep.pata@gmail.com">Get in touch</a>
+    <a href="mailto:joosep.pata@gmail.com">Discuss a collaboration <span aria-hidden="true">→</span></a>
   </section>
 </div>
 {{ end }}
