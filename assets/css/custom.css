@@ -704,32 +704,6 @@ main#content > .post.container {
   margin-top: 0;
 }
 
-.supervision-intro {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  margin-bottom: 3rem;
-  padding: 1.35rem;
-}
-
-.supervision-intro p { margin: 0; }
-
-.topic-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-top: 1rem;
-}
-
-.topic-list span {
-  background: var(--surface-elevated);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--text-muted);
-  font-size: 0.78rem;
-  padding: 0.35rem 0.65rem;
-}
-
 /* Footer */
 .footer {
   border-top: 1px solid var(--border);

@@ -1,10 +1,8 @@
 ---
-title: Supervision
-description: Ongoing and completed theses and student projects supervised by Joosep Pata.
+title: Research supervision
+description: Doctoral research, master’s and bachelor’s theses, and student projects in particle physics, astrophysics, simulation, and scientific machine learning.
 type: page
 ---
-
-{{< supervision-intro >}}
 
 ## Ongoing doctoral supervision
 
