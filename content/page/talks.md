@@ -1,79 +1,87 @@
 ---
 title: Talks
-subtitle: Conference and outreach talks
+description: Selected conference, seminar, and outreach talks by Joosep Pata.
 type: page
 ---
 
-#### sTARTUp Day 2026
-- Tartu, January 29, 2026
-- https://kvant.ee/en/quantum-technology-estonia/useful-resources/startup-day-2026/
-- Panel: "Cutting Through the Hype – Quantum and AI Technology Limits, Lessons, and Next Moves"
+## 2026
 
-#### ZPW2026
-- Zurich, January 5-7, 2026
-- https://indico.cern.ch/event/1604420/contributions/6760819/
-- Particle flow reconstruction with a learnable, differentiable, efficient ML model
+### AI and experimental sciences
 
-#### TeadusEST 2025
-- Tartu, December 4, 2025
-- https://youtu.be/SyesLXJtqPc?t=19351
+{{< badge "seminar" >}} Guest seminar · TalTech Institute of Chemistry and Biotechnology · Tallinn · March 19, 2026
 
-#### Taltech AI Retreat
-- Estonia, November 27, 2025
-- https://taltech.ee/en/events/AI-retreat
+### “Cutting Through the Hype – Quantum and AI Technology Limits, Lessons, and Next Moves”
 
-#### CERN OpenLab Workshop
-- CERN, March 4, 2025
-- https://indico.cern.ch/event/1440389/#6-machine-learned-particle-flo
+{{< badge "panel" >}} [sTARTUp Day](https://kvant.ee/en/quantum-technology-estonia/useful-resources/startup-day-2026/) · Tartu · January 29, 2026
 
-#### Estonian Academy of Sciences
-- Tallinn, January 3, 2025
-- https://www.youtube.com/watch?v=S6IQwRzNQpM
+### Particle flow reconstruction with a learnable, differentiable, efficient ML model
 
-#### CERN Baltic Conference
-- Tallinn, October 16, 2024
-- https://indico.cern.ch/event/1416853/contributions/6178185/attachments/2948367/5183026/cern_baltic_conference_2024.pdf
-- Talk on machine learning and computing for CERN in Estonia
+{{< badge "talk" >}} [ZPW2026](https://indico.cern.ch/event/1604420/contributions/6760819/) · Zurich · January 5–7, 2026
 
-#### Viimsi High School
-- Viimsi, June 6, 2024
-- Invited to speak about fundamental research, physics and AI at CERN
+## 2025
 
-#### Outreach event at University of Tartu
-- Tartu, May 8, 2024
-- Invited to talk to high-school graduates about fundamental research at CERN
+### Science and society
 
-#### ACAT 2024
-- Stony Brook, March 14, 2024
-- https://indico.cern.ch/event/1330797/contributions/5776140/
-- Plenary on machine learning for particle flow reconstruction
+{{< badge "invited" >}} [TeadusEST](https://youtu.be/SyesLXJtqPc?t=19351) · Tartu · December 4, 2025
 
-#### ML4Jets 2023
-- Hamburg, November 6, 2023
-- https://indico.cern.ch/event/1253794/contributions/5588555/
-- HPC-friendly ML models for detector reconstruction
+### Invited talk at the TalTech AI Retreat
 
-#### Learning to Discover 2022
-- Paris, April 19, 2022
-- https://indico.ijclab.in2p3.fr/event/5999/timetable/#49-overview-of-machine-learnin
-- Invited talk on ML for calorimetry and particle flow reconstruction
+{{< badge "invited" >}} [TalTech AI Retreat](https://taltech.ee/en/events/AI-retreat) · Estonia · November 27, 2025
 
-#### MPML Lisbon, 2022
-- Lisbon (virtual), February 3, 2022
-- https://mpml.tecnico.ulisboa.pt/seminars?id=6541
-- Colloquium on machine learning for data reconstruction at the LHC
+### Machine learning for data reconstruction
 
-#### ACAT 2021
-- Daejeon (virtual), December 2, 2021
-- https://indico.cern.ch/event/855454/contributions/4597457/
-- Machine learning for particle flow reconstruction at CMS, on behalf of CMS
+{{< badge "invited" >}} [CERN OpenLab Workshop](https://indico.cern.ch/event/1440389/#6-machine-learned-particle-flo) · CERN · March 4, 2025
 
-#### QU Data Science Basics 2021
-- Hamburg (virtual), 2021
-- https://indico.desy.de/category/834/
-- Graph neural networks, invited
+### Invited talk at the Estonian Academy of Sciences
 
-#### Lake Louise 2019
-- Lake Louise, February 15, 2019
-- https://indico.cern.ch/event/760557/contributions/3295177/
-- Measurements of ttH at CMS, on behalf of CMS
+{{< badge "invited" >}} [Video](https://www.youtube.com/watch?v=S6IQwRzNQpM) · Tallinn · January 3, 2025
+
+## 2024
+
+### Machine learning and computing for CERN in Estonia
+
+{{< badge "talk" >}} [CERN Baltic Conference slides](https://indico.cern.ch/event/1416853/contributions/6178185/attachments/2948367/5183026/cern_baltic_conference_2024.pdf) · Tallinn · October 16, 2024
+
+### Fundamental research, physics, and AI at CERN
+
+{{< badge "outreach" >}} Viimsi High School · Viimsi · June 6, 2024
+
+### Fundamental research at CERN
+
+{{< badge "outreach" >}} University of Tartu outreach event for high-school graduates · Tartu · May 8, 2024
+
+### Machine learning for particle-flow reconstruction
+
+{{< badge "plenary" >}} [ACAT 2024](https://indico.cern.ch/event/1330797/contributions/5776140/) · Stony Brook · March 14, 2024
+
+## 2023
+
+### HPC-friendly ML models for detector reconstruction
+
+{{< badge "talk" >}} [ML4Jets](https://indico.cern.ch/event/1253794/contributions/5588555/) · Hamburg · November 6, 2023
+
+## 2022
+
+### Machine learning for calorimetry and particle-flow reconstruction
+
+{{< badge "invited" >}} [Learning to Discover](https://indico.ijclab.in2p3.fr/event/5999/timetable/#49-overview-of-machine-learnin) · Paris · April 19, 2022
+
+### Machine learning for data reconstruction at the LHC
+
+{{< badge "colloquium" >}} [MPML Lisbon](https://mpml.tecnico.ulisboa.pt/seminars?id=6541) · Virtual · February 3, 2022
+
+## 2021
+
+### Machine learning for particle-flow reconstruction at CMS
+
+{{< badge "talk" >}} [ACAT 2021](https://indico.cern.ch/event/855454/contributions/4597457/) · On behalf of CMS · Virtual · December 2, 2021
+
+### Graph neural networks
+
+{{< badge "invited" >}} [QU Data Science Basics](https://indico.desy.de/category/834/) · Virtual · 2021
+
+## 2019
+
+### Measurements of ttH at CMS
+
+{{< badge "talk" >}} [Lake Louise](https://indico.cern.ch/event/760557/contributions/3295177/) · On behalf of CMS · Lake Louise · February 15, 2019

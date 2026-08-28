@@ -1,0 +1,75 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root { --accent-color: {{ .Site.Params.AccentColor | default "#FF4D4D" }}; }
+    </style>
+
+    {{ $title := .Site.Title }}
+    {{ if not .IsHome }}
+        {{ $title = printf "%s | %s" (.Title | default .Site.Title) .Site.Title }}
+    {{ end }}
+    {{ $description := ((.Description | default (.Summary | default .Content) | default .Site.Params.Description) | plainify | truncate 160) }}
+    {{ $image := .Params.image | default .Site.Params.socialImage | default (.Scratch.Get "avatarImgSrc") }}
+
+    <title>{{ $title }}</title>
+    <meta name="description" content="{{ $description }}">
+
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $description }}">
+    <meta property="og:image" content="{{ absURL $image }}">
+    <meta property="og:image:secure_url" content="{{ absURL $image }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ $description }}">
+    <meta name="twitter:image" content="{{ absURL $image }}">
+
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    {{ $cssNormalize := resources.Get "css/normalize.min.css" }}
+    <link rel="stylesheet" type="text/css" href="{{ $cssNormalize.RelPermalink }}" media="print">
+
+    {{ $cssMain := slice (resources.Get "css/main.css") (resources.Get "css/custom.css") | resources.Concat "css/site.css" | minify }}
+    <link rel="stylesheet" type="text/css" href="{{ $cssMain.RelPermalink }}">
+
+    {{ $cssDark := slice (resources.Get "css/dark.css") (resources.Get "css/custom-dark.css") | resources.Concat "css/site-dark.css" | minify }}
+    <link id="dark-theme" rel="stylesheet" href="{{ $cssDark.RelPermalink }}">
+
+    {{ $jsBundle := resources.Match "js/**.js" | resources.Concat "js/bundle.js" | minify | resources.Fingerprint "sha256" }}
+    <script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}"></script>
+
+    {{ if .IsHome }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Joosep Pata",
+      "url": "{{ .Site.BaseURL }}",
+      "image": "{{ absURL .Site.Params.AvatarURL }}",
+      "jobTitle": "Senior Research Scientist",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "National Institute of Chemical Physics and Biophysics",
+        "url": "https://www.kbfi.ee"
+      },
+      "sameAs": [
+        "https://orcid.org/0000-0002-5191-5759",
+        "https://inspirehep.net/authors/1077949",
+        "https://github.com/jpata",
+        "https://www.linkedin.com/in/joosep-pata/"
+      ],
+      "knowsAbout": [
+        "Scientific machine learning",
+        "Experimental particle physics",
+        "High-performance computing",
+        "Particle-flow reconstruction"
+      ]
+    }
+    </script>
+    {{ end }}
+</head>

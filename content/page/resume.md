@@ -1,6 +1,12 @@
-**Senior** **Research Scientist** with **14+ years of experience** developing and deploying software solutions for complex, novel, data-intensive problems in the HEP domain. Seeking to leverage my expertise in **scientific computing, applied deep learning** and **HPC** for challenging and impactful research directions. Proven ability to **prioritize and execute**, **lead projects**, **iterate fast**, **deliver results** and **share knowledge** in diverse teams.
+---
+title: Curriculum vitae
+description: Research experience, education, technical leadership, publications, invited talks, and recognition.
+type: page
+---
 
-## **Professional Experience**
+Senior Research Scientist with 14+ years of experience developing and deploying software for complex, data-intensive problems in experimental physics. My work combines scientific computing, applied deep learning, high-performance computing, research leadership, and the delivery of production scientific software.
+
+## Professional experience
 
 **Senior Research Scientist, AI/ML	NICPB/KBFI**	**07/2020 – Present**  
 High-Energy Physics and Computation Group	Tallinn, Estonia
@@ -34,20 +40,20 @@ High-Energy Physics and Computation Group 	Tallinn, Estonia
 
 * **CERN Data Analysis**: Developed data analysis software (C++/Python/numpy) software development for the CMS experiment at CERN.
 
-## **Education**
+## Education
 
 * **PhD, Experimental Particle Physics** *(ETH Medal)*, ETH Zürich ([Thesis](https://doi.org/10.3929/ethz-b-000276848))	**09/2014 – 07/2018**  
 * **M.Sc., Fundamental Physics** *(cum laude)***,** University of Tartu, Estonia	**09/2012 – 06/2014**  
 * **B.Sc., Physics,** University of Tartu, Estonia	**09/2008 – 06/2012**
 
-## **Technical skills**
+## Technical skills
 
 * **Software Engineering**: CI/CD (Github/Gitlab), debugging, optimization, regression analysis 	**14 years**  
 * **HPC**: distributed storage (CEPH, Hadoop) and processing (Slurm), NoSQL datasets (ROOT, parquet), DevOps (ansible)	**12 years**  
 * **Software Development**: Python, C/C++ in production, legacy code maintenance and modernization 	**10 years**  
 * **ML**: pytorch & tensorflow deployment, use of multi-GPU systems including HPC	**7 years**
 
-## **Core competencies**
+## Core competencies
 
 * **Scientific Computing & Software Engineering:** familiarity with the CERN stack (C++, Python, libraries & distribution)  	**14 years**  
 * **Data Analysis and Engineering**: contribution to multiple key measurements at CERN through large-scale data analysis	**11 years**  
@@ -56,20 +62,20 @@ High-Energy Physics and Computation Group 	Tallinn, Estonia
 * **Project Management**: research funding acquisition/reporting, computing software and infrastructure	**6 years**  
 * **Technical Leadership**: successfully led PhD and MSci projects, co-led the CERN CMS reconstruction team	**5 years**
 
-## **Industry projects**
+## Industry projects
 
 * [**Mu-Ray Tech**](https://www.linkedin.com/company/mu-ray-tech): advisor	**2025 – Present**  
 * [**Taara Robotics**](https://taararobotics.com/): real-time multi-task segmentation and object identification networks for Jetson Orin NX DLA	**2025**  
 * [**GScan**](https://www.gscan.eu/): accurate tomography reconstruction using 3D-CNNs for construction safety	**2023**
 
-## **Language skills**
+## Language skills
 
 * **English**			full proficiency  
 * **Russian, French**		limited working  
 * **Korean**			elementary  
 * **Estonian**			native language
 
-## **Scientific publications and reports**
+## Scientific publications and reports
 
 1. Seeba, N.-N. et al, *“ParticleTransformer is all you need for reconstructing hadronic tau leptons”*, [arXiv:2606.18460](https://arxiv.org/abs/2606.18460) **(2026)**  
 2. Mokhtar, F. et al, *“Machine-learned particle flow as a foundation model for collider physics”*, [arXiv:2606.14373](https://arxiv.org/abs/2606.14373) **(2026)**  
@@ -91,7 +97,7 @@ High-Energy Physics and Computation Group 	Tallinn, Estonia
 18. CMS Collaboration, “*Observation of ttH production*”, **PRL (2018)**, [10.1103/PhysRevLett.120.231801](https://doi.org/10.1103/PhysRevLett.120.231801)  
 19. CMS Collaboration, “*Identification of heavy-flavour jets with the CMS detector in pp collisions at 13 TeV*”, **JINST (2018)**, [10.1088/1748-0221/13/05/P05011](https://doi.org/10.1088/1748-0221/13/05/P05011) 
 
-## **Key research talks**
+## Key research talks
 
 * Panel discussion: "Cutting Through the Hype – Quantum and AI Technology Limits, Lessons, and Next Moves", [sTARTUp Day 2026 (Tartu, Estonia)](https://kvant.ee/en/quantum-technology-estonia/useful-resources/startup-day-2026/)	**2026**  
 * Particle flow reconstruction with a learnable, differentiable, efficient ML model, [ZPW2026 (Zurich, Switzerland)](https://indico.cern.ch/event/1604420/contributions/6760819/)	**2026**  
@@ -107,7 +113,7 @@ High-Energy Physics and Computation Group 	Tallinn, Estonia
 * Machine learning for particle flow reconstruction at CMS, [ACAT (Daejeon, South Korea)](https://indico.cern.ch/event/855454/contributions/4597457/), *virtual*	**2021**  
 * Measurements of ttH at CMS, [Lake Louise (Canada)](https://indico.cern.ch/event/760557/contributions/3295177/attachments/1797281/2930410/lake_louise.pdf)	**2019**
 
-## **Professional recognition**
+## Professional recognition
 
 * [Estonian National Research Award](https://www.sirp.ee/riiklikud-teaduse-aastapreemiad/)	**2025**  
 * [CMS Achievement Award for reconstruction software coordination](https://cms.cern/news/cms-award-2021)	**2021**  

@@ -1,0 +1,13 @@
+<section class="container list-posts news-listing">
+    <header class="post-header-section">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ range (where .Pages "Params.type" "post").GroupByDate "2006" }}
+    <h2 class="posts-year">{{ .Key }}</h2>
+    <div class="news-list-group">
+        {{ range .Pages }}{{ partial "list-posts.html" . }}{{ end }}
+    </div>
+    {{ end }}
+</section>

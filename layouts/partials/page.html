@@ -1,0 +1,16 @@
+{{ $pageClass := "section" }}
+{{ with .File }}{{ $pageClass = .TranslationBaseName }}{{ end }}
+<article class="post container page-{{ $pageClass }}">
+    <header class="post-header-section">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+    </header>
+
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+
+    {{ if .Site.Params.ShowBackToTopButton }}
+        {{ partial "back-to-top.html" . }}
+    {{ end }}
+</article>

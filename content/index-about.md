@@ -1,7 +1,9 @@
-I am a **Senior Research Scientist** at the [Laboratory of High-Energy and Computational Physics](https://kbfi.ee/keaf/) at [NICPB](https://www.kbfi.ee), a national lab for fundamental and applied research in Estonia. My work focuses on the intersection of **applied machine learning**, **high-performance computing (HPC)**, and **experimental particle physics**.
+---
+_build:
+  render: never
+  list: never
+---
 
-With over **14 years of experience** in scientific computing and deep learning, my research centers on developing **scalable machine learning models** (such as graph neural networks and transformers) for **real-time data reconstruction** at the CERN LHC and future colliders. I previously **co-led the reconstruction software group for the CERN CMS collaboration** and currently **direct research initiatives** supported by the [Estonian Research Council](https://etag.ee/en/).
+I am a Senior Research Scientist at the [Laboratory of High-Energy and Computational Physics](https://kbfi.ee/keaf/) at [NICPB](https://www.kbfi.ee). My work combines scientific machine learning, high-performance computing, and experimental particle physics, with an emphasis on scalable systems that can operate in real scientific workflows.
 
-Before joining NICPB, I conducted **postdoctoral research at Caltech** and completed my **PhD at ETH Zürich** ([Thesis](https://doi.org/10.3929/ethz-b-000276848)). In addition to academic research, I collaborate with industry partners to design and deploy **custom machine learning solutions**. This includes developing real-time multi-task perception networks for robotics platforms at [Taara Robotics](https://taararobotics.com/), physical AI for 3D tomography at [GScan](https://www.gscan.eu/technology), and sequence modeling at [Lingvist](https://lingvist.io/blog/is-there-a-map-for-learning-a-language/). I also advise [Mu-Ray Tech](https://www.linkedin.com/company/mu-ray-tech).
-
-For details on my background, publications, and talks, please view my [resume](/page/resume/) or [get in touch](https://www.linkedin.com/in/joosep-pata/) to discuss potential collaborations.
+I previously co-led reconstruction software for the CERN CMS collaboration, conducted postdoctoral research at Caltech, and completed my PhD at ETH Zürich. I also collaborate on applied machine-learning projects involving scientific instruments, robotics, tomography, and complex sensor data.

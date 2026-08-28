@@ -5,15 +5,17 @@ languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
 enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
 
 # Choose one of emacs, trac or perldoc
 pygmentsStyle = "monokai"
 
 [params]
   footer = "Joosep Pata"
-  description = "Senior Research Scientist in Applied Machine Learning"
+  description = "Machine learning for scientific discovery, real-time reconstruction, and high-performance computing."
   avatarURL = "/img/avatar-icon.png"
-  AvatarAltText = "avatar"
+  AvatarAltText = "Portrait of Joosep Pata"
+  socialImage = "/img/social-card.png"
   avatarSize = "size-l"
   ShowBackToTopButton = true # true or false for "back to top" button on posts and pages
   socialIcons = [
@@ -25,28 +27,29 @@ pygmentsStyle = "monokai"
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    pre = "<span data-feather='home'></span>"
-    url = "/"
+    name = "Research"
+    url = "/page/research/"
     weight = 1
 
   [[menu.main]]
-    name = "Research"
-    pre = "<span data-feather='code'></span>"
-    url = "/page/research/"
+    name = "Supervision"
+    url = "/page/supervision/"
     weight = 2
 
   [[menu.main]]
     name = "Talks"
-    pre = "<span data-feather='archive'></span>"
     url = "/page/talks/"
     weight = 3
 
   [[menu.main]]
-    name = "Updates"
-    pre = "<span data-feather='activity'></span>"
+    name = "News"
     url = "/updates/"
     weight = 4
+
+  [[menu.main]]
+    name = "CV"
+    url = "/page/resume/"
+    weight = 5
 
 [markup]
   [markup.tableOfContents]

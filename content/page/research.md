@@ -1,14 +1,23 @@
 ---
 title: Research
+description: Scientific machine learning for particle reconstruction, foundation models, astrophysics, and high-performance computing.
 type: page
 ---
+
+My research develops machine-learning systems that operate under the accuracy, scale, and reliability constraints of experimental science. A central theme is learning useful particle-level representations directly from heterogeneous detector data and deploying them in real scientific workflows.
+
+{{< research-focus >}}
+
+{{< research-profiles >}}
+
+## Selected publications
 
 ### 2026
 
 #### ParticleTransformer is all you need for reconstructing hadronic tau leptons
 - This study presents the first fully machine-learned hadronic tau reconstruction approach for the future FCC-ee collider using the CLD detector setup, achieving high performance across tau identification, decay mode classification, charge reconstruction, and four-momentum regression.
 - {{< badge "preprint" >}} arXiv:2606.18460
-- https://arxiv.org/abs/2606.18460
+- [Read on arXiv](https://arxiv.org/abs/2606.18460)
 {{< side-by-side 
     width="100%" 
     img1="/img/2026/particletransformer/architecture.png" 
@@ -22,7 +31,7 @@ type: page
 #### Machine-learned particle flow as a foundation model for collider physics
 - This work demonstrates that the latent representations learned by machine-learned particle-flow reconstruction (MLPF) encode rich physics information, acting as a foundation model that significantly improves downstream analysis tasks like jet flavor tagging, jet energy regression, and missing momentum regression.
 - {{< badge "preprint" >}} arXiv:2606.14373
-- https://arxiv.org/abs/2606.14373
+- [Read on arXiv](https://arxiv.org/abs/2606.14373)
 {{< side-by-side 
     width="100%" 
     img1="/img/2026/mlpf_foundation/illustration.png" 
@@ -36,7 +45,7 @@ type: page
 #### Full event interpretation with machine-learning-based particle-flow reconstruction in the CMS detector
 - This work presents the implementation and integration of the machine-learning-based particle-flow (MLPF) reconstruction algorithm within the CMS software framework, demonstrating full-event reconstruction on GPUs with improved jet energy resolution and 5x faster inference compared to standard heuristics.
 - {{< badge "accepted" >}} Eur. Phys. J. C (2026) / arXiv:2601.17554
-- https://arxiv.org/abs/2601.17554
+- [Read on arXiv](https://arxiv.org/abs/2601.17554)
 {{< side-by-side 
     width="100%" 
     img1="/img/2026/cms_mlpf/architecture.png" 
@@ -52,7 +61,7 @@ type: page
 #### Fine-tuning machine-learned particle-flow reconstruction for new detector geometries in future colliders
 - This study demonstrates that a machine-learned algorithm for particle-flow reconstruction, when pre-trained on data from one particle detector, can be successfully fine-tuned for a different detector design to achieve the same performance as a model trained from scratch but with ten times less data.
 - {{< badge "published" >}} Phys. Rev. D 111, 092015 (2025)
-- https://doi.org/10.1103/PhysRevD.111.092015
+- [Publication](https://doi.org/10.1103/PhysRevD.111.092015)
 {{< side-by-side 
     width="100%" 
     img1="/img/2025/mlpf_finetune/loss.png" 
@@ -66,7 +75,7 @@ type: page
 #### Reconstructing hadronically decaying tau leptons with a jet foundation model
 - This paper investigates adapting the OmniJet-a jet foundation model, originally pretrained on a different dataset and task, to reconstruct hadronically decaying tau leptons, demonstrating that fine-tuning the pretrained model significantly improves performance, particularly momentum resolution, compared to training from scratch.
 - {{< badge "published" >}} SciPost Phys. Core 8, 046 (2025)
-- https://doi.org/10.21468/SciPostPhysCore.8.3.046
+- [Publication](https://doi.org/10.21468/SciPostPhysCore.8.3.046)
 {{< side-by-side 
     width="100%" 
     img1="/img/2025/taufm/architecture.jpg" 
@@ -80,7 +89,7 @@ type: page
 #### On the detection of stellar wakes in the Milky Way: a deep learning approach
 - This paper assesses the viability of using deep learning trained on simulations to detect stellar wakes induced by dark matter subhalos in the Milky Way's stellar halo, finding the method can infer subhalo presence down to masses of 5x10⁷ M☉.
 - {{< badge "published" >}} Astronomy and Astrophysics 693, A227 (2025)
-- https://doi.org/10.1051/0004-6361/202451480
+- [Publication](https://doi.org/10.1051/0004-6361/202451480)
 {{< side-by-side 
     width="100%" 
     img1="/img/2025/stellarwakes/wake.jpg" 
@@ -94,61 +103,61 @@ type: page
 #### A unified machine learning approach for reconstructing hadronically decaying tau leptons
 - We show that tau leptons can be efficiently and accurately reconstructed using a multi-task machine learning setup.
 - {{< badge "published" >}} Computer Physics Communications 307 (2025)
-- https://doi.org/10.1016/j.cpc.2024.109399
+- [Publication](https://doi.org/10.1016/j.cpc.2024.109399)
 
 ### 2024
 
 #### Improved particle-flow event reconstruction with scalable neural networks for current and future particle detectors
 - We show that a scalable and portable graph neural network algorithm can efficiently reconstruct stable particles, resulting in more accurate event reconstruction.
 - {{< badge "published" >}} Nature Communications Physics 7, 124 (2024) 
-- https://doi.org/10.1038/s42005-024-01599-5
+- [Publication](https://doi.org/10.1038/s42005-024-01599-5)
 
 #### Tau lepton identification and reconstruction: A new frontier for jet-tagging ML algorithms
 - We demonstrate that the transformer-based architecture can be used for tau lepton identification, and that it outperforms alternative approaches based on heuristic algorithms and convolutional nets.
 - {{< badge "published" >}} Computer Physics Communications 298 (2024)
-- https://doi.org/10.1016/j.cpc.2024.109095
+- [Publication](https://doi.org/10.1016/j.cpc.2024.109095)
 
 ### 2023
 
 #### Dynamics of false vacuum bubbles with trapped particles
 - This study investigates the evolution of collapsing false vacuum bubbles using simulations of a coupled bubble-particle system, showing that particle-wall interactions decrease the compactness of the collapsing bubbles and make their collapse to black holes less likely.
 - {{< badge "published" >}} Phys. Rev. D 108, 036023 (2023)
-- https://doi.org/10.1103/PhysRevD.108.036023
+- [Publication](https://doi.org/10.1103/PhysRevD.108.036023)
 
 #### A Bayesian estimation of the Milky Way's circular velocity curve using Gaia DR3
 - We analyzed large astrophysical datasets to accurately measure the rotation curve of the Milky Way Galaxy.
 - {{< badge "published" >}} Astronomy and Astrophysics, Volume 676 (2023)
-- https://doi.org/10.1051/0004-6361/202346474
+- [Publication](https://doi.org/10.1051/0004-6361/202346474)
 
 ### 2022
 
 #### Sensitivity Estimation for Dark Matter Subhalos in Synthetic Gaia DR2 using Deep Learning
 - We applied deep learning based anomaly detection methods to search for rare astrophysical phenomena.
 - {{< badge "published" >}} Astronomy and Computing, Volume 41 (2022)
-- https://doi.org/10.1016/j.ascom.2022.100667 
+- [Publication](https://doi.org/10.1016/j.ascom.2022.100667)
 
 ### 2021
 
 #### MLPF: Efficient machine-learned particle-flow reconstruction using graph neural networks
 - We developed a novel graph neural network based particle flow reconstruction algorithm.
 - {{< badge "published" >}} European Physical Journal C, Volume 81 (2021)
-- https://doi.org/10.1140/epjc/s10052-021-09158-w
+- [Publication](https://doi.org/10.1140/epjc/s10052-021-09158-w)
 
 ### 2020
 
 #### Data Analysis with GPU-Accelerated Kernels
 - I developed a novel approach for large-scale high-energy physics data analysis based on GPUs, accelerating the time-to-insight by ~10x.
 - {{< badge "published" >}} Proceedings of Science, Volume 390, ICHEP (2020)
-- https://doi.org/10.22323/1.390.0908
+- [Publication](https://doi.org/10.22323/1.390.0908)
 
 ### 2018
 
 #### Observation of ttH production
 - I developed sensitive matrix-element based statistical analysis tools for the CMS observation.
 - {{< badge "published" >}} Phys. Rev. Lett. 120, 231801 (2018)
-- https://doi.org/10.1103/PhysRevLett.120.231801
+- [Publication](https://doi.org/10.1103/PhysRevLett.120.231801)
 
 #### Identification of heavy-flavour jets with the CMS detector in pp collisions at 13 TeV
 - I developed a novel b-quark identification model (cMVAv2) based on xgboost, thus introducing industry-standard tools to the CMS b-tagging team.
 - {{< badge "published" >}} Journal of Instrumentation, Volume 13 (2018)
-- https://doi.org/10.1088/1748-0221/13/05/P05011
+- [Publication](https://doi.org/10.1088/1748-0221/13/05/P05011)

@@ -1,0 +1,49 @@
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="header">
+    <nav class="header-nav" aria-label="Primary navigation">
+        {{ if isset .Site.Params "avatarurl" }}
+        <div class="avatar">
+            <a href="{{ .Site.BaseURL }}" aria-label="Joosep Pata, home">
+                <img src='{{ .Scratch.Get "avatarImgSrc" }}' alt="" width="38" height="38">
+            </a>
+        </div>
+        {{ end }}
+
+        <div class="nav-title">
+            <a class="nav-brand" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </div>
+
+        <div class="nav-links">
+            {{ range .Site.Menus.main }}
+            {{ $active := hasPrefix $.RelPermalink .URL }}
+            <div class="nav-link">
+                <a href="{{ .URL | absURL }}"{{ if $active }} aria-current="page"{{ end }}{{ if .Params.NewPage }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+            </div>
+            {{ end }}
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span class="sr-only dark-theme-toggle-screen-reader-target"></span>
+                <a aria-label="Toggle color theme"><span class="theme-toggle-icon" data-feather="moon"></span></a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span class="sr-only hamburger-menu-toggle-screen-reader-target">Menu</span>
+                <a aria-label="Open navigation menu"><span data-feather="menu"></span></a>
+            </div>
+
+            <ul class="nav-hamburger-list visibility-hidden">
+                {{ range .Site.Menus.main }}
+                {{ $active := hasPrefix $.RelPermalink .URL }}
+                <li class="nav-item">
+                    <a href="{{ .URL | absURL }}"{{ if $active }} aria-current="page"{{ end }}{{ if .Params.NewPage }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+                </li>
+                {{ end }}
+                <li class="nav-item dark-theme-toggle">
+                    <span class="sr-only dark-theme-toggle-screen-reader-target">Theme</span>
+                    <a aria-label="Toggle color theme"><span class="theme-toggle-icon" data-feather="moon"></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
