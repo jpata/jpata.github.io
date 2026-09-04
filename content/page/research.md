@@ -44,8 +44,8 @@ My research develops machine-learning systems that operate under the accuracy, s
 
 #### Full event interpretation with machine-learning-based particle-flow reconstruction in the CMS detector
 - This work presents the implementation and integration of the machine-learning-based particle-flow (MLPF) reconstruction algorithm within the CMS software framework, demonstrating full-event reconstruction on GPUs with improved jet energy resolution and 5x faster inference compared to standard heuristics.
-- {{< badge "accepted" >}} Eur. Phys. J. C (2026) / arXiv:2601.17554
-- [Read on arXiv](https://arxiv.org/abs/2601.17554)
+- {{< badge "published" >}} Eur. Phys. J. C 86, 1025 (2026)
+- [Publication](https://doi.org/10.1140/epjc/s10052-026-15754-5)
 {{< side-by-side 
     width="100%" 
     img1="/img/2026/cms_mlpf/architecture.png" 
