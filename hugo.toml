@@ -32,24 +32,29 @@ pygmentsStyle = "monokai"
     weight = 1
 
   [[menu.main]]
+    name = "Applications"
+    url = "/page/applications/"
+    weight = 2
+
+  [[menu.main]]
     name = "Supervision"
     url = "/page/supervision/"
-    weight = 2
+    weight = 3
 
   [[menu.main]]
     name = "Talks"
     url = "/page/talks/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     name = "News"
     url = "/updates/"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     name = "CV"
     url = "/page/resume/"
-    weight = 5
+    weight = 6
 
 [markup]
   [markup.tableOfContents]

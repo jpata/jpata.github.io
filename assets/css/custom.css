@@ -307,6 +307,172 @@ main#content > .post.container {
   margin-top: 0.65rem;
 }
 
+/* Industrial applications */
+.page-applications {
+  max-width: 1040px !important;
+}
+
+.page-applications .post-header-section {
+  max-width: 850px;
+}
+
+.page-applications .post-content > p:first-child {
+  color: var(--text-muted);
+  font-size: 1.12rem;
+  line-height: 1.65;
+  max-width: 800px;
+}
+
+.applications-principles {
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 2.4rem 0 1rem;
+  padding: 1rem 0;
+}
+
+.applications-principles span {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.applications-principles span + span::before {
+  color: var(--border-strong);
+  content: "/";
+  margin: 0 0.85rem;
+}
+
+.application-case {
+  align-items: center;
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  margin-top: 4.5rem;
+  padding-top: 4.5rem;
+}
+
+.applications-principles + .application-case {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 3.5rem;
+}
+
+.application-case-reverse {
+  grid-template-columns: minmax(0, 1.22fr) minmax(0, 0.78fr);
+}
+
+.application-case-reverse .application-case-copy { order: 2; }
+.application-case-reverse .application-case-media { order: 1; }
+
+.application-case-number {
+  color: var(--accent-deep);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.8rem;
+}
+
+.page-applications .post-content .application-case h2 {
+  border: 0;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  line-height: 1.12;
+  margin: 0;
+  padding: 0;
+}
+
+.application-case-text {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.65;
+  margin-top: 1.15rem;
+}
+
+.application-case-text p { margin: 0; }
+.application-case-text strong { color: inherit; }
+
+.application-case-media {
+  margin: 0;
+  min-width: 0;
+}
+
+.application-case-media video {
+  aspect-ratio: 16 / 9;
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  box-shadow: var(--shadow-soft);
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.application-case-media figcaption {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  margin-top: 0.7rem;
+}
+
+.applications-contact {
+  align-items: end;
+  background: var(--surface-strong);
+  border-radius: 8px;
+  color: #ffffff;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin: 5rem 0 1rem;
+  padding: clamp(1.75rem, 4vw, 3rem);
+}
+
+.applications-contact-kicker {
+  color: #d3d8de;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+}
+
+.page-applications .post-content .applications-contact h2 {
+  border: 0;
+  color: #ffffff;
+  font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+  margin: 0;
+  padding: 0;
+}
+
+.applications-contact div > p:last-child {
+  color: #d3d8de;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0.8rem 0 0;
+  max-width: 610px;
+}
+
+.post-content .applications-contact-link {
+  background: #ffffff;
+  border-radius: 4px;
+  color: #20252c;
+  display: inline-block;
+  font-size: 0.86rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.post-content .applications-contact-link:hover {
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
 .page-talks .post-content h2 {
   border-top: 1px solid var(--border);
   color: var(--accent-deep);
@@ -505,6 +671,22 @@ main#content > .news-listing {
   .post-header-section { padding: 3.2rem 0 1.8rem; }
   .research-focus-grid { grid-template-columns: 1fr; }
 
+  .application-case,
+  .application-case-reverse {
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+
+  .application-case-reverse .application-case-copy,
+  .application-case-reverse .application-case-media { order: initial; }
+
+  .applications-contact {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .applications-contact-link { justify-self: start; }
+
   .footer-inner {
     align-items: flex-start;
     flex-direction: column;
@@ -542,6 +724,17 @@ main#content > .news-listing {
   .contact-band h2 { font-size: 2rem; }
 
   .post-content h2 { font-size: 1.55rem; }
+
+  .applications-principles {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+
+  .applications-principles span + span::before { content: none; }
+  .application-case { margin-top: 3.5rem; padding-top: 3.5rem; }
+  .applications-principles + .application-case { padding-top: 2.5rem; }
+  .applications-contact { margin-top: 4rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

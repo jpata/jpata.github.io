@@ -1,0 +1,15 @@
+{{- $reverse := eq (.Get "reverse") "true" -}}
+<section class="application-case{{ if $reverse }} application-case-reverse{{ end }}">
+  <div class="application-case-copy">
+    <p class="application-case-number">{{ .Get "number" }}</p>
+    <h2>{{ .Get "title" }}</h2>
+    <div class="application-case-text">{{ .Inner | markdownify }}</div>
+  </div>
+  <figure class="application-case-media">
+    <video controls muted autoplay loop playsinline preload="metadata" aria-label="{{ .Get "label" }}">
+      <source src="{{ .Get "video" }}" type="video/mp4">
+      Your browser does not support embedded video.
+    </video>
+    <figcaption>{{ .Get "caption" }}</figcaption>
+  </figure>
+</section>
