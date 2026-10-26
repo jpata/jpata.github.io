@@ -4,11 +4,13 @@ description: Research experience, education, technical leadership, publications,
 type: page
 ---
 
-Senior Research Scientist with 14+ years of experience developing and deploying software for complex, data-intensive problems in experimental physics. My work combines scientific computing, applied deep learning, high-performance computing, research leadership, and the delivery of production scientific software.
+Senior Research Scientist at KBFI and Associate Scientist at CERN openlab, with 14+ years of experience developing and deploying software for complex, data-intensive problems in experimental physics. My work combines scientific computing, applied deep learning, high-performance computing, research leadership, and the delivery of production scientific software.
 
 ## Professional experience
 
-**Senior Research Scientist, AI/ML	NICPB/KBFI**	**07/2020 – Present**  
+**Associate Scientist, [CERN openlab](https://openlab.web.cern.ch/)** — **Present**
+
+**Senior Research Scientist, AI/ML	KBFI**	**07/2020 – Present**\
 High-Energy Physics and Computation Group	Tallinn, Estonia
 
 * **ML Model Development for Data Reconstruction:** Developed novel GNN/Transformer models and data pipelines using PyTorch/TensorFlow on multi-GPU HPC systems (AMD and Nvidia). Deployed with ONNX to production-ready systems. Improved critical accuracy metrics by up to 30%. Led work on multiple peer-reviewed publications, including *Nature Communications Physics*.  
@@ -35,7 +37,7 @@ Data Science Team	Tallinn, Estonia
 
 * **Predictive Modeling:** Developed an LSTM-based model based on business requirements that significantly improved language learning recall analysis in open-ended vocabulary data streams.
 
-**Research Engineer		NICPB/KBFI**	**01/2012 – 08/2014**  
+**Research Engineer		KBFI**	**01/2012 – 08/2014**\
 High-Energy Physics and Computation Group 	Tallinn, Estonia
 
 * **CERN Data Analysis**: Developed data analysis software (C++/Python/numpy) software development for the CMS experiment at CERN.
@@ -78,9 +80,9 @@ High-Energy Physics and Computation Group 	Tallinn, Estonia
 ## Scientific publications and reports
 
 1. Seeba, N.-N. et al, *“ParticleTransformer is all you need for reconstructing hadronic tau leptons”*, [arXiv:2606.18460](https://arxiv.org/abs/2606.18460) **(2026)**  
-2. Mokhtar, F. et al, *“Machine-learned particle flow as a foundation model for collider physics”*, [arXiv:2606.14373](https://arxiv.org/abs/2606.14373) **(2026)**  
-3. CMS collaboration, *“Full event interpretation with machine-learning-based particle-flow reconstruction in the CMS detector”*, **Eur. Phys. J. C (2026)**, [10.48550/arXiv.2601.17554](https://doi.org/10.48550/arXiv.2601.17554)  
-4. Tani, L. et al, *“Reconstructing hadronically decaying tau leptons with a jet foundation model”,* **SciPost Physics (2025)**,    [10.21468/SciPostPhysCore.8.3.046](https://doi.org/10.21468/SciPostPhysCore.8.3.046)   
+2. Mokhtar, F. et al, *“Machine-learned particle flow as a foundation model for collider physics”*, **PRX Intelligence (accepted September 17, 2026)**, [10.1103/v5n3-d3tn](https://doi.org/10.1103/v5n3-d3tn); [arXiv:2606.14373](https://arxiv.org/abs/2606.14373)
+3. CMS Collaboration, *“Full event interpretation with machine-learning-based particle-flow reconstruction in the CMS detector”*, **Eur. Phys. J. C 86, 1025 (2026)**, [10.1140/epjc/s10052-026-15754-5](https://doi.org/10.1140/epjc/s10052-026-15754-5)
+4. Tani, L. et al, *“Reconstructing hadronically decaying tau leptons with a jet foundation model”,* **SciPost Phys. Core 8, 046 (2025)**, [10.21468/SciPostPhysCore.8.3.046](https://doi.org/10.21468/SciPostPhysCore.8.3.046)
 5. Mokhtar, F. et al, *“Fine-tuning machine-learned particle-flow reconstruction for new detector geometries in future colliders”*, **PRD (2025)**, [10.1103/PhysRevD.111.092015](https://doi.org/10.1103/PhysRevD.111.092015)   
 6. Põder, S. et al, *“On the detection of stellar wakes in the Milky Way: a deep learning approach”*, **Astronomy and Astrophysics (2025)**, [10.1051/0004-6361/202451480](https://doi.org/10.1051/0004-6361/202451480)   
 7. Tani, L. et al, *“A unified machine learning approach for reconstructing hadronically decaying tau leptons”*, **Computer Physics Communications 307 (2025)**, [10.1016/j.cpc.2024.109399](https://doi.org/10.1016/j.cpc.2024.109399)  

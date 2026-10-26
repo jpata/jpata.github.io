@@ -51,12 +51,19 @@
       "name": "Joosep Pata",
       "url": "{{ .Site.BaseURL }}",
       "image": "{{ absURL .Site.Params.AvatarURL }}",
-      "jobTitle": "Senior Research Scientist",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "National Institute of Chemical Physics and Biophysics",
-        "url": "https://www.kbfi.ee/en/"
-      },
+      "jobTitle": ["Senior Research Scientist", "Associate Scientist"],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "National Institute of Chemical Physics and Biophysics",
+          "url": "https://www.kbfi.ee/en/"
+        },
+        {
+          "@type": "Organization",
+          "name": "CERN openlab",
+          "url": "https://openlab.web.cern.ch/"
+        }
+      ],
       "sameAs": [
         "https://orcid.org/0000-0002-5191-5759",
         "https://inspirehep.net/authors/1077949",

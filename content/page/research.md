@@ -25,13 +25,13 @@ My research develops machine-learning systems that operate under the accuracy, s
     alt1="A flowchart illustrating the multi-task ParticleTransformer model architecture for FCC-ee. It takes input particles and processes them to perform tau identification, decay mode classification, charge reconstruction, and full four-momentum regression." 
     alt2="A plot showing the relative visible transverse momentum resolution (lower values are better) as a function of the visible transverse momentum (pt) for the ParticleTransformer (unified and task-specific models) compared to baseline jet reconstruction."
     caption1="We design a unified multi-task ParticleTransformer model that performs tau identification, charge reconstruction, decay mode analysis, and visible momentum regression simultaneously." 
-    caption2="The ParticleTransformer model achieves sub-percent visible transverse momentum resolution, significantly outperforming standard jet-reconstruction baselines." 
+    caption2="The ParticleTransformer model achieves percent-level visible transverse momentum resolution, outperforming standard jet-reconstruction baselines."
 >}}
 
 #### Machine-learned particle flow as a foundation model for collider physics
 - This work demonstrates that the latent representations learned by machine-learned particle-flow reconstruction (MLPF) encode rich physics information, acting as a foundation model that significantly improves downstream analysis tasks like jet flavor tagging, jet energy regression, and missing momentum regression.
-- {{< badge "preprint" >}} arXiv:2606.14373
-- [Read on arXiv](https://arxiv.org/abs/2606.14373)
+- {{< badge "accepted" >}} PRX Intelligence · September 17, 2026
+- [Journal DOI](https://doi.org/10.1103/v5n3-d3tn) · [Read on arXiv](https://arxiv.org/abs/2606.14373)
 {{< side-by-side 
     width="100%" 
     img1="/img/2026/mlpf_foundation/illustration.png" 
